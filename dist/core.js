@@ -1,3 +1,11 @@
+/*
+ * Kop.js 1.0.0
+ *
+ * (c) 2022 WADE Open Source Software. and its affiliates.
+ * Released under the MIT License.
+ * https://github.com/WADE-OSS/kop.js/blob/main/LICENSE
+ */
+
 const kop = {
     wordSeparate(word) {
         const f = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ',
