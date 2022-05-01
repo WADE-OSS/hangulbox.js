@@ -63,5 +63,15 @@ const kop = {
         };
 
         return returnWord;
+    },
+    toArray(word){
+        return [...word];
+    },
+    toArrayNotDuplicate(word){
+        word = [...word];
+        const notDuplicate = word.filter((val, index) => {
+            return word.indexOf(val) === index;
+        });
+        return notDuplicate;
     }
 };
