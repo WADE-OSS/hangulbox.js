@@ -1,12 +1,12 @@
 /*
- * Kop.js 1.0.0
+ * hangulbox.js 1.0.0
  *
  * (c) 2022 WADE Open Source Software. and its affiliates.
  * Released under the MIT License.
- * https://github.com/WADE-OSS/kop.js/blob/main/LICENSE
+ * https://github.com/WADE-OSS/hangulbox.js/blob/main/LICENSE
  */
 
-const kop = {
+const hangulbox = {
     wordSeparate(word) {
         const f = ['ㄱ', 'ㄲ', 'ㄴ', 'ㄷ', 'ㄸ', 'ㄹ', 'ㅁ',
                 'ㅂ', 'ㅃ', 'ㅅ', 'ㅆ', 'ㅇ', 'ㅈ', 'ㅉ',
@@ -73,5 +73,14 @@ const kop = {
             return word.indexOf(val) === index;
         });
         return notDuplicate;
+    },
+    checkLastConsonantLetter(word) {
+        if (typeof word !== 'string') return null;
+        var lastLetter = word[word.length - 1];
+        var unicode = lastLetter.charCodeAt(0);
+       
+        if (unicode < 44032 || unicode > 55203) return null;
+       
+        return (unicode - 44032) % 28 != 0;
     }
 };
