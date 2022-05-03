@@ -6,19 +6,21 @@
 <br>
 <br>
 
-### 한단어만 분리하기
+### wordSeparate : 한단어만 분리합니다
 ```js
   kop.wordSeparate('안');
   // return 'ㅇㅏㄴ'
 ```
 
-### 문장을 분리하기
+### wordSeparateAll : 문장을 분리합니다
 ```js
   kop.wordSeparateAll('안녕하세요');
    // return 'ㅇㅏㄴㄴㅕㅇㅎㅏㅅㅔㅇㅛ'
 ```
 
-### 문자을 분리하고 Array로 받기
+
+
+### wordSeparateToArray : 문자를 분리하고 Array로 받습니다
 ```js
 kop.wordSeparateToArray('안녕하세요');
 /* return [
@@ -28,4 +30,16 @@ kop.wordSeparateToArray('안녕하세요');
 3: (3) ['ㅅ', 'ㅔ', '']
 4: (3) ['ㅇ', 'ㅛ', '']
 ] */
+```
+
+### toArray : 문자 하나하나를 Array로 분류합니다
+```js
+kop.toArray('안녕하세요. 안녕');
+// return ['안', '녕', '하', '세', '요', '.', ' ', '안', '녕']
+```
+
+### toArrayNotDuplicate : toArray와 비슷하지만 중복 문자를 제거합니다
+```js
+kop.toArrayNotDuplicate('안녕하세요. 안녕');
+// return ['안', '녕', '하', '세', '요', '.', ' ']
 ```
