@@ -5,21 +5,31 @@
 <br>
 <br>
 
-### wordSeparate(word) : 한단어만 분리합니다
+### wordSeparate(word)
+한단어만 분리합니다
+
 ```js
 hangulbox.wordSeparate('안');
   // return 'ㅇㅏㄴ'
 ```
 
-### wordSeparateAll(word) : 문장을 분리합니다
+<br>
+<br>
+
+### wordSeparateAll(word)
+문장을 분리합니다
+
 ```js
   hangulbox.wordSeparateAll('안녕하세요');
    // return 'ㅇㅏㄴㄴㅕㅇㅎㅏㅅㅔㅇㅛ'
 ```
 
+<br>
+<br>
 
+### wordSeparateToArray(word)
+문자를 분리하고 Array로 받습니다
 
-### wordSeparateToArray(word) : 문자를 분리하고 Array로 받습니다
 ```js
 hangulbox.wordSeparateToArray('안녕하세요');
 /* return [
@@ -31,19 +41,34 @@ hangulbox.wordSeparateToArray('안녕하세요');
 ] */
 ```
 
-### toArray(word) : 문자 하나하나를 Array로 분류합니다
+<br>
+<br>
+
+### toArray(word)
+문자 하나하나를 Array로 분류합니다
+
 ```js
 hangulbox.toArray('안녕하세요. 안녕');
 // return ['안', '녕', '하', '세', '요', '.', ' ', '안', '녕']
 ```
 
-### toArrayNotDuplicate(word) : toArray와 비슷하지만 중복 문자를 제거합니다
+<br>
+<br>
+
+### toArrayNotDuplicate(word)
+toArray와 비슷하지만 중복 문자를 제거합니다
+
 ```js
 hangulbox.toArrayNotDuplicate('안녕하세요. 안녕');
 // return ['안', '녕', '하', '세', '요', '.', ' ']
 ```
 
-### checkLastConsonantLetter(word) : 마지막 글자가 받침을 가지면 true를, 받침을 가지지 않으면 false를 return합니다
+<br>
+<br>
+
+### checkLastConsonantLetter(word)
+마지막 글자가 받침을 가지면 true를, 받침을 가지지 않으면 false를 return합니다
+
 ```js
 hangulbox.checkLastConsonantLetter('안녕');
 // return true
