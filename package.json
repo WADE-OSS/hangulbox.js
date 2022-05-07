@@ -1,0 +1,9 @@
+{
+  "name": "hangulbox",
+  "version": "1.0.0-alpha.2",
+  "description": "hangulbox는 한글을 조금더 쉽게 다룰 수 있게 도와주는 JavaScript 라이브러리입니다.",
+  "main": "core.js",
+  "keywords": ["hangulbox","hangul","한글"],
+  "author": "WADE-OSS",
+  "license": "MIT"
+}
