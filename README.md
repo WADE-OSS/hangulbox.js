@@ -1,9 +1,29 @@
 # hangulbox.js
-한글을 다양한 형태로 바꿀 수 있는 자바스크입트 라이브러리 입니다.
+hangulbox는 한글을 조금더 쉽게 다룰 수 있게 도와주는 JavaScript 라이브러리입니다.<br>
+다음 설명서에서 hangulbox.js에 대한 모든것을 알아보세요.
+
+<br>
+<br>
+
+## 시작하기
+사용 사례 및 기본 설정에 따라 빌드 단계를 포함하거나 포함하지 않고 hangulbox.js를 사용할 수 있습니다.
+
+### CDN으로 시작하기
+```
+https://cdn.jsdelivr.net/gh/WADE-OSS/hangulbox.js@1.0.0-alpha.1/dist/core.js
+```
+
+### npm으로 설치하기
+```
+> npm install hangulbox
+```
+
 
 <br>
 <br>
 <br>
+
+## 사용 설명서
 
 ### wordSeparate(word)
 한단어만 분리합니다
